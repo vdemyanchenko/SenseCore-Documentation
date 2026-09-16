@@ -21,7 +21,6 @@ This plugin is designed for gameplay teams that want DualSense-specific features
 |---|---|---|
 | Windows | Supported | USB and Bluetooth HID support; USB advanced haptics endpoint support |
 | macOS | Supported | USB and Bluetooth HID support; native gamepad axis publishing may overlap with raw input |
-| Consoles | Not supported | This plugin is not a Sony SDK integration |
 
 ## Documentation
 
