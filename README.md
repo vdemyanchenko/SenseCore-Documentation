@@ -21,9 +21,7 @@ This plugin is designed for gameplay teams that want DualSense-specific features
 |---|---|---|
 | Windows | Supported | USB and Bluetooth HID support; USB advanced haptics endpoint support |
 | macOS | Supported | USB and Bluetooth HID support; native gamepad axis publishing may overlap with raw input |
-| Linux | Not supported | Not included in the plugin allow list |
 | Consoles | Not supported | This plugin is not a Sony SDK integration |
-| Mobile | Not supported | Not included in the plugin allow list |
 
 ## Documentation
 
@@ -42,7 +40,6 @@ Start here:
 ## Important Notes
 
 - Advanced haptics are intended for USB connections. Bluetooth controllers can still use regular HID input and supported output features.
-- Use `Set DualSense Vibration` with a local `PlayerController` for gameplay rumble.
 - Use the Audio Mixer endpoint workflow for USB PCM haptics and MetaSound output.
 
 ## Trademark Notice
