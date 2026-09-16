@@ -8,12 +8,7 @@ Use adaptive triggers, haptics, motion sensors, touchpad input, controller LEDs,
 multi-controller routing, device information, and other DualSense-specific
 features without implementing low-level HID communication yourself.
 
-<!-- TODO:
-Add the main SenseCore banner here when the final image is ready.
-
-Example:
-![SenseCore](Images/SenseCore-Banner.png)
--->
+[SenseCore](Images/sc1.png)
 
 ---
 
