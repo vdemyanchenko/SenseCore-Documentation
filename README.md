@@ -34,7 +34,6 @@ Start here:
 - [Diagnostics](Docs/DIAGNOSTICS.md)
 - [Troubleshooting](Docs/TROUBLESHOOTING.md)
 - [API Stability](Docs/API_STABILITY.md)
-- [Fab Listing Draft](Docs/FAB_LISTING_DRAFT.md)
 
 ## Important Notes
 
