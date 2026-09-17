@@ -7,9 +7,9 @@ SenseCore is a runtime Unreal Engine plugin for Windows and macOS.
 | Platform | Input | Output | Advanced haptics | Notes |
 |---|---|---|---|---|
 | Windows USB | Supported | Supported | Supported | Recommended path for full feature coverage |
-| Windows Bluetooth | Supported | Supported where the OS/device permits HID output | Not recommended | Bluetooth transport may differ by adapter and driver stack |
-| macOS USB | Supported | Supported | Supported | Test permissions and audio endpoint availability on target macOS versions |
-| macOS Bluetooth | Supported | Supported where the OS/device permits HID output | Not recommended | Native gamepad layer may also publish standard axes |
+| Windows Bluetooth | Supported | Limited by adapter/driver HID output support | Not supported | Bluetooth transport may differ by adapter and driver stack |
+| macOS USB | Supported | Supported | Supported through the platform audio endpoint path | Test permissions and audio endpoint availability on target macOS versions |
+| macOS Bluetooth | Supported through SenseCore input; native input may be incomplete | Limited by macOS HID output support | Not supported | Enable SenseCore gamepad input if native Bluetooth input is missing standard controls |
 
 ## Windows Notes
 
@@ -20,7 +20,8 @@ SenseCore is a runtime Unreal Engine plugin for Windows and macOS.
 
 ## macOS Notes
 
-- SenseCore disables raw analog input by default on Mac to reduce duplicate axis events while keeping supplemental DualSense buttons available.
+- macOS may publish standard gamepad input through the native gamepad layer.
+- SenseCore disables raw standard gamepad input by default on Mac to reduce duplicate button and axis events while keeping supplemental DualSense buttons available.
 - Unreal's native macOS Game Controller input path is the more stable standard gamepad input path:
 
 ```ini
