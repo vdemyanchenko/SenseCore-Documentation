@@ -91,5 +91,6 @@ If status repeatedly returns `Recovering`, check whether the physical controller
 | Controller model | `DualSense` or `DualSense Edge` |
 | Connection mode | `USB` or `Bluetooth` |
 | Repro steps | Short numbered list |
+| Expected / actual result | What should have happened and what happened instead |
 | Diagnostic report | Output from `Get DualSense Diagnostic Report` |
 | Logs | Relevant `DualSense` log lines |
