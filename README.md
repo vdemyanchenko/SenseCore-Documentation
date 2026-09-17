@@ -1,4 +1,5 @@
-# SenseCore - DualSense Support for Unreal Engine
+
+# SenseCore: DualSense Support for Unreal Engine
 
 SenseCore adds direct DualSense and DualSense Edge support to Unreal Engine projects on Windows and macOS. It exposes controller input, adaptive triggers, compatible rumble, lightbar and player LEDs, touchpad state, motion sensors, battery and headset state, audio controls, USB advanced haptics, and controller-assignment helpers through Blueprint-friendly APIs.
 
@@ -23,9 +24,9 @@ The plugin is built for teams that want DualSense-specific features without writ
 | Platform / connection | Input | Output | Advanced haptics | Notes |
 |---|---|---|---|---|
 | Windows USB | Supported | Supported | Supported | Recommended path for full feature coverage |
-| Windows Bluetooth | Supported | Supported where the OS/device permits HID output | Not recommended | Bluetooth behavior can vary by adapter and driver stack |
+| Windows Bluetooth | Supported | Limited by adapter/driver HID output support | Not supported | Bluetooth behavior can vary by adapter and driver stack |
 | macOS USB | Supported | Supported | Supported through the platform audio endpoint path | Recommended for validation and capture |
-| macOS Bluetooth | Supported | Supported where the OS/device permits HID output | Not recommended | Native gamepad input may overlap with raw HID input |
+| macOS Bluetooth | Supported through SenseCore input; native input may be incomplete | Limited by macOS HID output support | Not supported | Enable SenseCore gamepad input if native Bluetooth input is missing standard controls |
 | Linux, mobile, consoles | Not supported | Not supported | Not supported | Not included in the current plugin allow list |
 
 Console support would require platform-holder SDK integration and is outside the scope of this plugin.
