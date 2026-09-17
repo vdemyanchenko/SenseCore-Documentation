@@ -16,7 +16,7 @@ The plugin module is named `DualSenseSupport` and loads during `PreDefault`.
 
 Connect a DualSense or DualSense Edge controller over USB or Bluetooth.
 
-For first validation, USB is recommended because it gives the most complete feature coverage, including advanced haptics endpoint routing.
+For first validation, USB is recommended because it gives the most complete feature coverage, including adaptive triggers and advanced haptics endpoint routing.
 
 ## 3. Blueprint Setup
 
@@ -79,7 +79,7 @@ After basic output works, use the Audio Mixer endpoint flow described in [Advanc
 
 ## 9. Generate a Support Report
 
-Use `Get DualSense Diagnostic Report` when troubleshooting. By default it excludes device paths and platform identifiers. Enable `Include Sensitive Identifiers` only when sharing a report privately with support.
+Use `Get DualSense Diagnostic Report` when troubleshooting. By default it excludes device paths and platform identifiers. Enable `Include Sensitive Identifiers` only when sharing a private report with support.
 
 ## Connection Differences
 
