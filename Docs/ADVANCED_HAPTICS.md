@@ -52,7 +52,7 @@ When `bRouteFrontChannelsToActuators` is enabled, a conventional stereo signal c
 - `Recovering` means the endpoint encountered an error and is attempting recovery.
 - `Queue Underrun Frames` counts frames requested when no PCM was queued.
 - `Dropped Frames` counts old queued frames discarded to keep latency bounded.
-- `Last Error Code` contains the latest Windows audio error value; zero means no current error.
+- `Last Error Code` contains the latest platform audio endpoint error value; zero means no current error.
 
 An occasional counter change during startup is not automatically audible. A continuously increasing underrun count during playback means the producer is not feeding audio fast enough. A continuously increasing dropped-frame count means the producer is feeding faster than the endpoint consumes.
 
