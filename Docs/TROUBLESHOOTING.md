@@ -21,12 +21,12 @@ By default, the report omits sensitive identifiers. Enable `Include Sensitive Id
 
 ## Input Appears Twice
 
-On macOS or when another gamepad layer is active, standard axes or buttons may be published by both Unreal/native input and raw HID input.
+On macOS or when another gamepad layer is active, standard gamepad input may be published by both Unreal/native input and raw HID input.
 
 Recommended fixes:
 
-- Keep the default Mac raw analog behavior unless you explicitly need raw axes.
-- Use `Set DualSense Gamepad Input Enabled` if another input layer should own standard gamepad buttons.
+- Keep the default Mac raw standard gamepad input behavior unless you explicitly need SenseCore to publish standard controls.
+- Use `Set DualSense Gamepad Input Enabled` only when SenseCore should own standard buttons, sticks, triggers, and D-pad input.
 - Keep DualSense supplemental button publishing available for PS, mic, touchpad click, and Edge buttons.
 
 ## Rumble Does Not Play
