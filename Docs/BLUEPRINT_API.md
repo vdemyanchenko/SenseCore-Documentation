@@ -16,7 +16,7 @@ SenseCore exposes gameplay-facing controller features through `UDualSenseBluepri
 | `Is Platform User Id Valid` | Devices | Validates a platform user id |
 | `Get Pressed Input Keys For Player` | Input | Checks supplied keys on a player |
 | `Get Pressed DualSense Input Keys For Player` | Input | Checks standard, supplemental, and custom DualSense keys |
-| `Set DualSense Gamepad Input Enabled` | Input | Enables/disables raw HID standard gamepad button publishing |
+| `Set DualSense Gamepad Input Enabled` | Input | Enables/disables raw HID standard gamepad input publishing |
 | `Is DualSense Gamepad Input Enabled` | Input | Reads raw HID gamepad publishing state |
 | `Set DualSense Engine Force Feedback Enabled` | Input | Enables/disables Unreal legacy force-feedback forwarding |
 | `Is DualSense Engine Force Feedback Enabled` | Input | Reads force-feedback forwarding state |
@@ -184,17 +184,17 @@ Checks standard gamepad keys, DualSense supplemental keys, and caller-provided a
 
 ### Set DualSense Gamepad Input Enabled
 
-Controls raw HID standard gamepad button publishing.
+Controls raw HID standard gamepad input publishing.
 
 | Pin | Direction | Type | Values | Notes |
 |---|---|---|---|---|
-| `bEnabled` | Input | `bool` | `true`/`false` | Disable when another input layer owns standard gamepad buttons |
+| `bEnabled` | Input | `bool` | `true`/`false` | Disable when another input layer owns standard buttons, sticks, triggers, and D-pad input |
 
 ### Is DualSense Gamepad Input Enabled
 
 | Pin | Direction | Type | Values | Notes |
 |---|---|---|---|---|
-| `ReturnValue` | Output | `bool` | `true`/`false` | Current raw HID gamepad button publishing state |
+| `ReturnValue` | Output | `bool` | `true`/`false` | Current raw HID gamepad input publishing state |
 
 ### Set DualSense Engine Force Feedback Enabled
 
