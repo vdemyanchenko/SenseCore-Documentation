@@ -1,4 +1,4 @@
-# SenseCore: DualSense Support for Unreal Engine
+# SenseCore - DualSense Support for Unreal Engine
 
 SenseCore adds direct DualSense and DualSense Edge support to Unreal Engine projects on Windows and macOS. It exposes controller input, adaptive triggers, compatible rumble, lightbar and player LEDs, touchpad state, motion sensors, battery and headset state, audio controls, USB advanced haptics, and controller-assignment helpers through Blueprint-friendly APIs.
 
