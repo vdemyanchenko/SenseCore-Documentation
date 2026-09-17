@@ -8,7 +8,7 @@ SenseCore is a runtime Unreal Engine plugin for Windows and macOS.
 |---|---|---|---|---|
 | Windows USB | Supported | Supported | Supported | Recommended path for full feature coverage |
 | Windows Bluetooth | Supported | Supported where the OS/device permits HID output | Not recommended | Bluetooth transport may differ by adapter and driver stack |
-| macOS USB | Supported | Supported | Supported through the platform audio endpoint path | Test permissions and audio endpoint availability on target macOS versions |
+| macOS USB | Supported | Supported | Supported | Test permissions and audio endpoint availability on target macOS versions |
 | macOS Bluetooth | Supported | Supported where the OS/device permits HID output | Not recommended | Native gamepad layer may also publish standard axes |
 
 ## Windows Notes
