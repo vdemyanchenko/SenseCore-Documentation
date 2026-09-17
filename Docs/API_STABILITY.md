@@ -1,4 +1,4 @@
-# API stability
+# API Stability
 
 ## Stable gameplay surface
 
@@ -16,4 +16,4 @@ The game-instance subsystem keeps lower-level helper methods for internal routin
 
 ## Diagnostics
 
-The support report is safe by default and remains available in Shipping. Adding counters or status fields is non-breaking; changing HID read/write scheduling requires renewed hardware stress testing.
+The support report is safe by default and remains available in Shipping. Adding counters or status fields is non-breaking; changing HID read/write scheduling requires renewed hardware and packaged-build validation.
