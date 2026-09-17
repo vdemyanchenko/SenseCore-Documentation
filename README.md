@@ -42,6 +42,29 @@ Before release:
 
 ---
 
+# Documentation
+
+| Guide | Description |
+|---|---|
+| [Quick Start](Docs/QUICK_START.md) | Install SenseCore and create your first controller effects |
+| [Blueprint API](Docs/BLUEPRINT_API.md) | Blueprint node reference |
+| [Input Device User Subsystem](Docs/INPUT_DEVICE_USER_SUBSYSTEM.md) | Device, platform-user and local-player routing |
+| [Advanced Haptics](Docs/ADVANCED_HAPTICS.md) | Audio and MetaSound-based haptics |
+| [Platform Notes](Docs/PLATFORM_NOTES.md) | Windows, macOS, USB and Bluetooth differences |
+| [Diagnostics](Docs/DIAGNOSTICS.md) | Device and runtime diagnostic information |
+| [Troubleshooting](Docs/TROUBLESHOOTING.md) | Common issues and solutions |
+| [API Stability](Docs/API_STABILITY.md) | API compatibility and stability information |
+
+<!-- TODO:
+CHECK EVERY LINK ABOVE BEFORE RELEASE.
+
+GitHub paths and filenames are case-sensitive.
+
+Remove any row for a document that does not exist yet,
+or create the missing document before publishing.
+-->
+---
+
 # Features
 
 ## Controller Input
@@ -426,30 +449,6 @@ Images/Blueprint/GetConnectedDevices.png
 For a complete setup walkthrough, continue to:
 
 **[Quick Start →](Docs/QUICK_START.md)**
-
----
-
-# Documentation
-
-| Guide | Description |
-|---|---|
-| [Quick Start](Docs/QUICK_START.md) | Install SenseCore and create your first controller effects |
-| [Blueprint API](Docs/BLUEPRINT_API.md) | Blueprint node reference |
-| [Input Device User Subsystem](Docs/INPUT_DEVICE_USER_SUBSYSTEM.md) | Device, platform-user and local-player routing |
-| [Advanced Haptics](Docs/ADVANCED_HAPTICS.md) | Audio and MetaSound-based haptics |
-| [Platform Notes](Docs/PLATFORM_NOTES.md) | Windows, macOS, USB and Bluetooth differences |
-| [Diagnostics](Docs/DIAGNOSTICS.md) | Device and runtime diagnostic information |
-| [Troubleshooting](Docs/TROUBLESHOOTING.md) | Common issues and solutions |
-| [API Stability](Docs/API_STABILITY.md) | API compatibility and stability information |
-
-<!-- TODO:
-CHECK EVERY LINK ABOVE BEFORE RELEASE.
-
-GitHub paths and filenames are case-sensitive.
-
-Remove any row for a document that does not exist yet,
-or create the missing document before publishing.
--->
 
 ---
 
