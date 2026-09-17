@@ -1,10 +1,6 @@
 # SenseCore
 ### DualSense & DualSense Edge Support for Unreal Engine 5
 
-<p align="center">
-  <img src="Images/sc1.png" width="100%" alt="SenseCore">
-</p>
-
 SenseCore is an Unreal Engine plugin that provides direct access to
 DualSense and DualSense Edge controller features through Blueprint and C++ APIs.
 
@@ -12,7 +8,9 @@ Use adaptive triggers, haptics, motion sensors, touchpad input, controller LEDs,
 multi-controller routing, device information, and other DualSense-specific
 features without implementing low-level HID communication yourself.
 
-
+<p align="center">
+  <img src="Images/sc1.png" width="100%" alt="SenseCore">
+</p>
 
 ---
 
