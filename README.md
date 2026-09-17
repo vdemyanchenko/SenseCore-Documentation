@@ -2,7 +2,7 @@
 ### DualSense & DualSense Edge Support for Unreal Engine 5
 
 <p align="center">
-  <img src="Images/sc1" width="100%" alt="SenseCore">
+  <img src="Images/sc1.png" width="100%" alt="SenseCore">
 </p>
 
 SenseCore is an Unreal Engine plugin that provides direct access to
