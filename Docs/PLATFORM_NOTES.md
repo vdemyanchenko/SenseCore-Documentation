@@ -20,16 +20,24 @@ SenseCore is a runtime Unreal Engine plugin for Windows and macOS.
 
 ## macOS Notes
 
-- macOS may publish standard gamepad axes through the native gamepad layer.
 - SenseCore disables raw analog input by default on Mac to reduce duplicate axis events while keeping supplemental DualSense buttons available.
-- Prefer Unreal's legacy macOS controller path for DualSense projects by adding this to project configuration:
+- Unreal's native macOS Game Controller input path is the more stable standard gamepad input path:
+
+```ini
+[SystemSettings]
+Slate.MacControllerPreferGCImpl=1
+```
+
+This mode can incorrectly publish the DualSense touchpad click as `Special Left` and may not publish the actual `Special Left`/Create button consistently.
+
+- Unreal's legacy macOS controller path maps standard DualSense buttons more predictably:
 
 ```ini
 [SystemSettings]
 Slate.MacControllerPreferGCImpl=0
 ```
 
-The newer native Game Controller implementation can publish the DualSense touchpad click as `Special Left` while not publishing the actual `Special Left`/Create button consistently. With `Slate.MacControllerPreferGCImpl=0`, SenseCore's raw HID path can publish the DualSense supplemental buttons more predictably while avoiding confusing touchpad/Create overlap.
+This mode can be less stable when SenseCore is also connected to the controller through raw HID. For Bluetooth input, enabling SenseCore's gamepad input path with `Set DualSense Gamepad Input Enabled` may be required.
 
 - USB is recommended for full output and advanced haptics validation.
 
