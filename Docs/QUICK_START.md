@@ -10,6 +10,8 @@ Start with one DualSense connected by USB. See [Compatibility](COMPATIBILITY.md)
 
 On macOS, complete [macOS setup](PLATFORM_NOTES.md#macos-setup) before testing: native Game Controller input enabled, SenseCore raw gamepad input disabled, supplemental buttons enabled.
 
+Before packaging a Mac application, configure its [USB and Bluetooth HID entitlements](PLATFORM_NOTES.md#packaged-app-hid-permissions).
+
 ## 2. Get the Local Player
 
 Use the local `PlayerController` that should receive the effect. For a single-player test, use `Get Player Controller` with player index `0`.

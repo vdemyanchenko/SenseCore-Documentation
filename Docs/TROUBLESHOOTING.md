@@ -10,6 +10,12 @@ Start with one USB DualSense and a local PlayerController. Check [Compatibility]
 4. If a device is listed but `Is DualSense Connected` is false, check the target local player and platform-user assignment.
 5. On Mac, apply [macOS setup](PLATFORM_NOTES.md#macos-setup). Multi-controller identification is not guaranteed.
 
+## DualSense HID Is Unavailable in a Packaged Mac App
+
+Check the application's USB and Bluetooth sandbox entitlements. In the project's `Build/Mac/Resources/Sandbox.Server.entitlements` and `Sandbox.NoNet.entitlements`, set `com.apple.security.device.bluetooth` and `com.apple.security.device.usb` to `true` inside the existing plist dictionary. Repackage and sign the app with the updated permissions.
+
+See [Packaged App HID Permissions](PLATFORM_NOTES.md#packaged-app-hid-permissions) for the XML entries and file locations. Changing SenseCore input switches does not grant the application device access.
+
 ## Duplicate or Missing Input
 
 On Mac, disable SenseCore raw gamepad input and enable supplemental buttons. With `Slate.MacControllerPreferGCImpl=1`, touchpad click produces both native `Gamepad Special Left` and supplemental `DualSense Touchpad Click`. Create is not separately published in that mode. Adjust Input Actions accordingly; see [button mapping](PLATFORM_NOTES.md#button-mapping).

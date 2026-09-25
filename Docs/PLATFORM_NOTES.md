@@ -32,6 +32,30 @@ In **Project Settings > Plugins > SenseCore DualSense**:
 
 These are the plugin's Mac defaults; existing project config can override them. Restart the editor after changing the native controller implementation.
 
+### Packaged App HID Permissions
+
+A sandboxed Mac application needs USB and Bluetooth device entitlements for SenseCore to access DualSense through HID. Missing entitlements can prevent HID access even when the controller is connected to macOS.
+
+In the consuming Unreal project's directory, add the following entries inside the existing `<dict>` in **both** files:
+
+- `<ProjectRoot>/Build/Mac/Resources/Sandbox.Server.entitlements`
+- `<ProjectRoot>/Build/Mac/Resources/Sandbox.NoNet.entitlements`
+
+```xml
+<key>com.apple.security.device.bluetooth</key>
+<true/>
+<key>com.apple.security.device.usb</key>
+<true/>
+```
+
+`<ProjectRoot>` is the folder containing the `.uproject` file, not Unreal's virtual `/Game` content path or the plugin directory. Keep the existing plist structure and other entitlements; if these keys already exist, set their values to `true` rather than adding duplicates.
+
+Repackage and sign the application with the updated entitlements. Editing the project files does not change an already built application's permissions. If the project uses custom signing or entitlement files, ensure the files used to sign the app contain these entries as well.
+
+These are application-level permissions, separate from SenseCore's raw and supplemental input settings. They do not add Bluetooth PCM haptics support.
+
+Apple documents the keys as permissions to interact with [Bluetooth devices](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.device.bluetooth) and [USB devices](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.device.usb).
+
 ### Button mapping
 
 The recommended Game Controller implementation recognizes DualSense and other gamepads and publishes standard gamepad keys for Enhanced Input. In developer testing on UE 5.4–5.8:
