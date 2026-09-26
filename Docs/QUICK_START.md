@@ -4,7 +4,7 @@ Start with one DualSense connected by USB. See [Compatibility](COMPATIBILITY.md)
 
 ## 1. Install
 
-1. Install the package for your engine version and platform into the project's `Plugins` directory. When using a source checkout, the folder is `SenseCore-UE5-Plugin`; build it with the matching engine/toolchain.
+1. Install the package for your engine version and platform into the project's `Plugins` directory. When using a source checkout, the folder is `SenseCore`; build it with the matching engine/toolchain.
 2. Open the project and enable **SenseCore** in **Edit > Plugins**.
 3. Restart the editor if prompted.
 
