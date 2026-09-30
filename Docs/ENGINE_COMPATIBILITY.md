@@ -33,5 +33,3 @@ Input device IDs, platform user IDs and LocalPlayer indices are different identi
 ## macOS
 
 The Windows assignment policies do not provide independent Mac HID controller routing. Use the native input setup and observe the [macOS local multiplayer limitations](PLATFORM_NOTES.md#local-multiplayer-limits).
-
-Source build and regression-test instructions are in [Development Validation](DEVELOPMENT_VALIDATION.md).
